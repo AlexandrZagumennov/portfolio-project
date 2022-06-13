@@ -1,0 +1,11 @@
+@import 'components/var';
+//@import 'components/templates';
+//@import 'components/mixins';
+@import 'components/normalize';
+@import 'components/global';
+//@import 'components/fonts';
+
+@import 'libs/swiper-bundle.min';
+
+/* Подключение стилей блоков */
+@import 'components/social';
