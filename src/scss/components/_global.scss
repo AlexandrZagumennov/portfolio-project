@@ -14,15 +14,11 @@ body {
 	min-height: 100vh;
 	font-family: $main-font-family, sans-serif;
 	font-size: $main-font-size;
-	line-height: $main-line-height;
 	font-weight: 400;
 	font-style: normal;
 	letter-spacing: normal;
-	background-color: $color-3;
-	color: $color-1;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+	background-color: $color-1;
+	color: $color-content;
 }
 
 img {
@@ -40,8 +36,14 @@ input {
 	font: inherit;
 }
 
+address {
+	font-style: normal;
+}
+
 button {
 	cursor: pointer;
+	border: none;
+	background-color: transparent;
 }
 
 a {
@@ -81,9 +83,14 @@ iframe {
 }
 
 .container {
-	max-width: calc(886px + 2 * 20px);
-	padding: 0 10px; 
+	padding: 0 15px; 
 	margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+	.container {
+		padding: 0 40px; 
+	}
 }
 
 

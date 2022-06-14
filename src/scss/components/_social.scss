@@ -1,3 +1,21 @@
+.social__list {
+	display: flex;
+
+
+}
+
+.social__item {
+	display: block;
+	height: 26px;
+	width: 26px;
+	margin-right: 18px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+
 .social__link {
 	display: block;
 	height: 26px;
@@ -10,6 +28,7 @@
 	transition-property: color, outline-color;
 	transition-duration: .3s, .2s;
 	transition-timing-function: ease-in-out;
+
 }
 
 .social__link:hover{
