@@ -1,0 +1,43 @@
+.portfolio__title {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 120%;
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+.portfolio__slider {
+	position: relative;
+	max-width: 290px;
+	margin: 0 auto;
+}
+
+.portfolio__arrow {
+	display: block;
+	width: 26px;
+	height: 26px;
+	background: {
+		image: url("../img/sprite.svg#arrow");
+		position: center;
+		repeat: no-repeat;
+		size: contain;
+	};
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+
+	&_left {
+		left: 0;
+	}
+
+	&_right {
+		right: 0;
+		transform: rotate(180deg);
+	}
+
+	&_disabled {
+		opacity: .3;
+		pointer-events: none;
+	}
+}
+

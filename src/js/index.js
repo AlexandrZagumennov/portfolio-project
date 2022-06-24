@@ -1,14 +1,3 @@
-import {burger} from './burger.js';
-import {music} from './music.js';
-import {sliders} from './sliders.js';
+import { slider } from './slider.js';
 
-burger();
-music();
-sliders();
-
-
-
-
-
-
-
+slider();

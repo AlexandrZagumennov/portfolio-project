@@ -1,0 +1,46 @@
+.card {
+	max-width: 252px;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 20px 14px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card__picture {
+	width: 155px;
+	height: 92px;
+	background: {
+		size: cover;
+		image: url("../img/sprite.svg#macbook");
+		repeat: no-repeat;
+	};
+	padding: 5px 18px 12px;
+	margin-bottom: 30px;
+	align-self: center;
+}
+
+.card__data {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 23px;
+}
+
+.card__client {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 120%;
+}
+
+.card__date {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 140%;
+}
+
+.card__title {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 120%;
+}
+
