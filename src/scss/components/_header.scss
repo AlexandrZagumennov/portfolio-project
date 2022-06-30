@@ -22,6 +22,10 @@
 	padding: 30px 15px;
 	background-color: $color-header-bg;
 	color: $color-1;
+
+	&_active {
+		display: block;
+	}
 }
 
 .header__burger-btn{

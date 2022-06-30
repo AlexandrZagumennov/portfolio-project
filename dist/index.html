@@ -26,7 +26,7 @@
 		<div class="container header__container">
 			<img src="img/header/logo.svg" alt="Логотип Кира Сорокина" class="header__logo">
 
-			<address class="header__contacts contacts">
+			<address class="header__contacts contacts ">
 				<ul class="contacts__list">
 					<li class="contacts__item">
 						<p class="contacts__head">Телефон</p>
@@ -82,11 +82,7 @@
 		<section class="bio">
 			<div class="container bio__container">
 				
-				<!--<picture>-->
-					<!--<source srcset = "img/bio/kir-sorokin.avif" type="image/avif">-->
-					<!--<source srcset = "img/bio/kir-sorokin.webp" type="image/webp">-->
-					<img src="img/bio/kir-sorokin.jpg" alt="Фотография Кира Сорокина" class="bio__img" width="370" height="557">
-				<!--</picture>-->
+				<img src="img/bio/kir-sorokin.jpg" alt="Фотография Кира Сорокина" class="bio__img" width="370" height="557">
 
 				<div class="bio__content">
 					<hgroup class="bio__head-group">
@@ -94,7 +90,7 @@
 						<h2 class="bio__subtitle">Разработчик сайтов</h2>
 					</hgroup>
 					<p class="bio__description">Меня зовут Кир Сорокин, я разработчик сайтов с&nbsp;опытом 1&nbsp;год</p>
-					<button class="bio__order-btn">Заказать</button>
+					<button class="order-btn">Заказать</button>
 				</div>
 			</div>
 		</section>
@@ -132,42 +128,42 @@
 						</li>
 						<li class="portfolio__item swiper-slide">
 							<article class="card">
-								<img src="img/portfolio/dom.jpg" alt="" class="card__picture">
+								<img src="img/portfolio/dom.jpg" alt="Изображение работы Дом" class="card__picture">
 								<p class="card__data">
-									<span class="card__client">Клиент: Sinema</span>
-									<time class="card__date" datetime="2020">год: 2020</time>
-								</p>
-								<h3 class="card__title">Landing-page</h3>
-							</article>
-						</li>
-						<li class="portfolio__item swiper-slide">
-							<article class="card">
-								<img src="img/portfolio/fh.jpg" alt="" class="card__picture">
-								<p class="card__data">
-									<span class="card__client">Клиент: Sinema</span>
-									<time class="card__date" datetime="2020">год: 2020</time>
-								</p>
-								<h3 class="card__title">Landing-page</h3>
-							</article>
-						</li>
-						<li class="portfolio__item swiper-slide">
-							<article class="card">
-								<img src="img/portfolio/go.jpg" alt="" class="card__picture">
-								<p class="card__data">
-									<span class="card__client">Клиент: Sinema</span>
-									<time class="card__date" datetime="2020">год: 2020</time>
-								</p>
-								<h3 class="card__title">Landing-page</h3>
-							</article>
-						</li>
-						<li class="portfolio__item swiper-slide">
-							<article class="card">
-								<img src="img/portfolio/iphone.jpg" alt="" class="card__picture">
-								<p class="card__data">
-									<span class="card__client">Клиент: Sinema</span>
+									<span class="card__client">Клиент: ItalGroup </span>
 									<time class="card__date" datetime="2020">год: 2020</time>
 								</p>
 								<h3 class="card__title">Многостраничный сайт</h3>
+							</article>
+						</li>
+						<li class="portfolio__item swiper-slide">
+							<article class="card">
+								<img src="img/portfolio/fh.jpg" alt="Изображение работы Friendly House" class="card__picture">
+								<p class="card__data">
+									<span class="card__client">Клиент: Friendly House</span>
+									<time class="card__date" datetime="2020">год: 2020</time>
+								</p>
+								<h3 class="card__title">Landing-page</h3>
+							</article>
+						</li>
+						<li class="portfolio__item swiper-slide">
+							<article class="card">
+								<img src="img/portfolio/go.jpg" alt="Изображение работы Game Over" class="card__picture">
+								<p class="card__data">
+									<span class="card__client">Клиент: Game Over</span>
+									<time class="card__date" datetime="2019">год: 2020</time>
+								</p>
+								<h3 class="card__title">Landing-page</h3>
+							</article>
+						</li>
+						<li class="portfolio__item swiper-slide">
+							<article class="card">
+								<img src="img/portfolio/iphone.jpg" alt="Изображение работы Apple" class="card__picture">
+								<p class="card__data">
+									<span class="card__client">Клиент: Full Apple</span>
+									<time class="card__date" datetime="2020">год: 2020</time>
+								</p>
+								<h3 class="card__title">Landing-page</h3>
 							</article>
 						</li>
 					</ul>
@@ -176,7 +172,67 @@
 				</div>
 			</div>
 		</section>
-
 	</main>
+
+	<div class="modal__overlay">
+		<div class="modal__body">
+			<h2 class="visually-hidden">Форма обратной связи</h2>
+			<form class="modal__form">
+				<button class="modal__close">
+					<svg width="30" height="30" viewbox="0 0 30 30" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+						<rect width="39.7747" height="2.65165" rx="1" transform="matrix(0.707106 -0.707107 0.707106 0.707107 0 28.125)" />
+						<rect width="39.7747" height="2.65165" rx="1" transform="matrix(0.707106 0.707107 -0.707106 0.707107 1.875 0)" />
+					</svg>
+				</button>
+
+				<fieldset class="modal__fieldset">
+					<legend class="modal__title">Заполните форму и я свяжусь с вами</legend>
+	
+					<label  class="modal__label">
+						<input class="modal__input" type="text" name="bio" placeholder="Введите ваше ФИО">
+						<span class="modal__input-title">ФИО</span>
+					</label>
+	
+					<label class="modal__label">
+						<input class="modal__input" type="tel" name="phone" placeholder="Введите ваш номер телефона">
+						<span class="modal__input-title">Телефон</span>
+					</label>
+				</fieldset>
+
+				<fieldset class="modal__fieldset">
+					<legend class="modal__title">Где удобнее связаться?</legend>
+
+					<ul class="modal__radio-list">
+						<li class="modal__radio__list-item">
+							<label>
+								<input class="modal__radio-input" type="radio" name="contact" value="telegram" checked>
+								<span>Телеграмм</span>
+							</label>
+						</li>
+						<li class="modal__radio__list-item">
+							<label>
+								<input class="modal__radio-input" type="radio" name="contact" value="whatsApp">
+								<span>WhatsApp</span>
+							</label>
+						</li>
+						<li class="modal__radio__list-item">
+							<label>
+								<input class="modal__radio-input" type="radio" name="contact" value="by-phone">
+								<span>Позвонить</span>
+							</label>
+						</li>
+						<li class="modal__radio__list-item">
+							<label>
+								<input class="modal__radio-input" type="radio" name="contact" value="viber">
+								<span>Viber</span>
+							</label>
+						</li>
+					</ul>
+				</fieldset>
+
+				<button class="order-btn modal__btn">Отправить</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>	
